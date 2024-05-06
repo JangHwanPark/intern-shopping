@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="infognu.ansan.ac.kr" id="ec8ba825-4055-4740-921a-dd9cc3ba7191" port="22" nameFormat="DESCRIPTIVE" username="i2451506" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

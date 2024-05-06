@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="04b3d9a6-a908-4ad1-8882-357b8215f229" name="학교서버">
+        <fileTransfer rootFolder="/users/2024/i2451506" accessType="SFTP" host="infognu.ansan.ac.kr" port="22" sshConfigId="ec8ba825-4055-4740-921a-dd9cc3ba7191" sshConfig="i2451506@infognu.ansan.ac.kr:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
