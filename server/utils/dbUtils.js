@@ -68,11 +68,11 @@ export const signInUser = async (email, inputPassword) => {
 }
 
 // 로그인한 사용자 정보 조회
-export const selectUserById = async (id) => {
+export const selectUserById = async (uid) => {
     const conn = await pool.getConnection();
     try {
-        const query = `SELECT * FROM users WHERE id = ?`;
-        const [rows] = await conn.query(query, [id]);
+        const query = `SELECT * FROM users WHERE uid = ?`;
+        const [rows] = await conn.query(query, [uid]);
         return rows[0];
     } catch (error) {
         throw error;
@@ -101,7 +101,7 @@ export const selectCartByUserId = async (userId) => {
     const conn = await pool.getConnection();
 
     try {
-        const query = `SELECT * FROM cart WHERE id = ?`;
+        const query = `SELECT * FROM cart WHERE cid = ?`;
         const [rows] = await conn.query(query, [userId]);
         return rows;
     } catch (error) {

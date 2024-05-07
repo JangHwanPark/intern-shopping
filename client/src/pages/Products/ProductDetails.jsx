@@ -9,12 +9,11 @@ export default function ProductDetails() {
     console.log(`ProductDetails id: ${id}`);
 
     const {data, error, loading} = useFetch(`products/product?id=${id}`);
-    console.log(data)
     const products = data?.product;
+    console.log(`ProductDetails data: ${JSON.stringify(data)}`)
 
     return (
         <div>
-            ProductDetails
             <Products products={products}/>
         </div>
     );
