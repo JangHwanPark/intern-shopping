@@ -2,6 +2,7 @@ import React from 'react';
 import Products from "../components/Products/Products";
 import CarouselSlider from "../components/CarouselSlider/CarouselSlider";
 import useFetch from "../hooks/useFetch";
+import SearchBar from "../components/SearchBar/SearchBar";
 
 export default function Home() {
     const {data, error, loading} = useFetch('products');
@@ -12,6 +13,7 @@ export default function Home() {
 
     return (
         <>
+            <SearchBar/>
             <CarouselSlider/>
             <div className={'col-12'}>
                 {loading && <div>Loading...</div>}

@@ -15,20 +15,19 @@ export default function SearchBar() {
         const encodedInput = encodeURIComponent(userInput);
         console.log('인코딩된 검색어:', encodedInput);
         navigate(`products/search/product?name=${encodedInput}`);
-
-        //action={process.env.REACT_APP_ENDPOINT_SEARCH}
-        //method={'POST'}
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                name={userInput}
-                placeholder="상품을 검색하세요."
-                onChange={onChange}
-            />
-            <button>검색</button>
-        </form>
+        <div className={'col-12'}>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    name={userInput}
+                    placeholder="상품을 검색하세요."
+                    onChange={onChange}
+                />
+                <button>검색</button>
+            </form>
+        </div>
     );
 }
