@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="WS-241.14494.235">
+  <component name="dataSourceStorageLocal" created-in="WS-241.15989.105">
     <data-source name="db2451506@infodb.ansan.ac.kr" uuid="19ba9eec-1519-4908-bfc2-ac3a25afbd4c">
       <database-info product="MariaDB" version="10.6.17-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.3.3" dbms="MARIADB" exact-version="10.6.17" exact-driver-version="3.3">
         <extra-name-characters>#@</extra-name-characters>
@@ -34,6 +34,20 @@
             <name qname="test" />
             <name qname="users" />
           </node>
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="db2451506_react_app@infodb.ansan.ac.kr" uuid="f5cad8f3-3518-4319-9317-48a394629e80">
+      <database-info product="MariaDB" version="10.6.17-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="3.3.3" dbms="MARIADB" exact-version="10.6.17" exact-driver-version="3.3">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>i2451506</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
