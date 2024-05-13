@@ -1,6 +1,7 @@
 import React from 'react';
 import FormComponent from '../../components/FormComponent/FormComponent';
 import {useAccount} from "../../context/AuthContext";
+import {Link} from "react-router-dom";
 
 const loginFields = [
     { name: 'email', type: 'email', placeholder: '이메일' },
@@ -13,7 +14,7 @@ export default function Login() {
 
     return (
         <>
-            <div>Login</div>
+            <div className={'col-12'}>Login</div>
             <FormComponent
                 END_POINT={process.env.REACT_APP_ENDPOINT_SIGNIN}
                 method={'POST'}
@@ -21,6 +22,7 @@ export default function Login() {
                 useToken={true}
                 onSignIn={handleLogin}
             />
+            <Link to={'/auth/register'}>회원가입</Link>
         </>
     );
 }

@@ -12,6 +12,8 @@ export default function SearchByProducts() {
     const param = `products?name=${name}`
     const {data, error, loading} = useFetch(param, [name]);
 
+    console.log(`SearchByProducts name: ${name}`)
+    console.log(`SearchByProducts data: ${data}`)
     return (
         <div>
             <h2>검색 결과: {name}</h2>

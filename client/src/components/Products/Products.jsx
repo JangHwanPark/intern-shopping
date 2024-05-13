@@ -2,12 +2,13 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 export default function Products({products, className}) {
+    console.log(`Products: ${products}`)
     return (
         <div className={className}>
             {products && products.length > 0 ? (
                 products.map((product) => (
-                    <div key={product.id} className={'col-3'}>
-                        <Link to={`/products/product?id=${product.id}`}>
+                    <div key={product.pid} className={'col-3'}>
+                        <Link to={`/products/product?id=${product.pid}`}>
                             <h1>{product.name}</h1>
                             <p>{product.description}</p>
                             <p>{product.price}</p>

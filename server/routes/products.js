@@ -55,13 +55,12 @@ router.get('/search/product', async (req, res) => {
 // 상품 상세페이지 (쿼리스트링 사용)
 router.get('/product', async (req, res) => {
     const productId = req.query.id;
+    console.log(`client data id: ${productId}`)
 
     const conn = await pool.getConnection();
-    const sql = `SELECT * FROM products WHERE id = ?`;
+    const sql = `SELECT * FROM products WHERE pid = ?`;
     const [rows] = await conn.query(sql, [productId]);
     conn.release();
-
-
 
     res.status(200).json({
         message: 'Product detail',
