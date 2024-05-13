@@ -1,8 +1,9 @@
 {
   "type": "module",
   "main": "app.js",
+  "proxy": "localhost:3000",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "test": "jest"
   },
   "dependencies": {
@@ -20,5 +21,8 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
