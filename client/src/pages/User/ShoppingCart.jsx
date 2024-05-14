@@ -1,10 +1,12 @@
 import React from 'react';
-import useFetch from "../../hooks/useFetch";
+// import useFetch from "../../hooks/useFetch";
 
-export default function ShoppingCart({cart}) {
+export default function ShoppingCart({cart})
+// cart라는 이름의 props를 받는다
+{
    // const {data, error, loading} = useFetch('cart');
    // const cart = data?.cart;
-    //console.log(`cart: ${JSON.stringify(cart)}`)
+   // console.log(`cart: ${JSON.stringify(cart)}`)
 
     return (
         <div>
