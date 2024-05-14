@@ -1,7 +1,12 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-export default function Products({products, className}) {
+export default function Products({ products, addToCart ,className}) {
+        console.log("버튼이 클릭되었습니다");
+
+
+
+
     return (
         <div className={className}>
             {products && products.length > 0 ? (
@@ -12,7 +17,7 @@ export default function Products({products, className}) {
                             <p>{product.description}</p>
                             <p>{product.price}</p>
                         </Link>
-                        <button>상품 담기</button>
+                        <button onClick={() => addToCart(product)}>상품 담기</button>{/*버튼함수 생성*/}
                     </div>
                 ))
             ) : (

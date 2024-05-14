@@ -1,18 +1,19 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer className={'col-12'}>
-            <section>
-                <ul className={'flex'}>
-                    <li>배송정보</li>
-                    <li>교환 및 반품</li>
-                    <li>이용약관</li>
-                    <li>문의하기</li>
-                    <li>개인정보처리방침</li>
-                </ul>
-            </section>
+        <nav>
+            <ul className={"footer-nav"}>
+                <li>
+                <NavLink to={"/shipping"}>배송정보</NavLink>
+                <NavLink to={"/exchange"}>교환 및 반품</NavLink>
+                <NavLink to={"/terms"}>이용약관</NavLink>
+                <NavLink to={"/contact"}>문의하기</NavLink>
+                <NavLink to={"/privacy"}>개인정보처리방침</NavLink>
+                </li>
+            </ul>
             <p>&copy; {new Date().getFullYear()} Intern Shopping. All rights reserved.</p>
-        </footer>
+        </nav>
     );
 }
